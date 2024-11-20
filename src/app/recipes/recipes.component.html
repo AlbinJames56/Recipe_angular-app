@@ -1,20 +1,84 @@
 <app-header></app-header>
 <div class="container my-5">
   <div class="row">
-    <div class="container">
-      <h5>Filter</h5>
-      <button class="btn mt-5">All</button>
-      <button
-        class="btn dropdown-toggle"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseExample"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-      >
-        Cuisine Type
-      </button>
+    <div class="col-lg-4">
+      <div class="container">
+        <h5>Filter</h5>
+        <button class="btn mt-5">All</button>
+        <br />
+        <!-- Cuisine type -->
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Cuisine Type
+        </button>
+        <div class="collapse" id="collapseExample">
+          <Button class="btn m-1 btn-outline-success">Italian</Button>
+          <Button class="btn m-1 btn-outline-success">Asian</Button>
+          <Button class="btn m-1 btn-outline-success">American</Button>
+          <Button class="btn m-1 btn-outline-success">Mexican</Button>
+          <Button class="btn m-1 btn-outline-success">Indian</Button>
+          <Button class="btn m-1 btn-outline-success">Pakistani</Button>
+          <Button class="btn m-1 btn-outline-success">Japanese</Button>
+          <Button class="btn m-1 btn-outline-success">Thai</Button>
+        </div>
+
+        <!-- meal type -->
+        <br />
+
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseMealType"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Meal Type
+        </button>
+        <div class="collapse gap-3" id="collapseMealType">
+          <Button class="btn m-1 btn-outline-success">Dinner</Button>
+          <Button class="btn m-1  btn-outline-success">Lunch</Button>
+          <Button class="btn m-1 btn-outline-success">Dessert</Button>
+          <Button class="btn m-1 btn-outline-success">Appetizer</Button>
+          <Button class="btn m-1 btn-outline-success">Breakfast</Button>
+          <Button class="btn m-1 btn-outline-success">Beverage</Button>
+          <Button class="btn m-1 btn-outline-success">Salad</Button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3>All recipes</h3>
+        <input
+          type="text"
+          class="form-control w-50"
+          placeholder="Search Your Recipes"
+          name=""
+          id=""
+        />
+      </div>
+      <div class="row my-3">
+        <div class="col-lg-8">
+          <div class="p-3">
+            <img
+              width="100%"
+              src="https://cdn.dummyjson.com/recipe-images/2.webp"
+              alt=""
+            />
+            <div class="card-body mt-3">
+              <h4>Title</h4>
+              <p>Asian</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-lg-4"></div>
 </div>
