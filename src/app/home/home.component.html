@@ -30,18 +30,16 @@
       <p class="text-success fs-3">Out most popular Recipe of the week</p>
     </div>
     <div class="row">
-      <div class="col-lg-8">
+      @for (recipes of homeRecipes; track $index) {
+      <div class="col-lg-6">
         <div class="p-3">
-          <img
-            width="100%"
-            src="https://png.pngtree.com/png-vector/20240324/ourmid/pngtree-chicken-biryani-plate-with-leg-piece-front-view-png-image_12238410.png"
-            alt=""
-          />
+          <img width="100%" [src]="recipes.image" alt="" />
           <div class="card-body">
-            <h4>Title</h4>
+            <h4 class="text-center">{{ recipes.name }}</h4>
           </div>
         </div>
       </div>
+      }
     </div>
   </div>
   <!-- banner -->
@@ -67,11 +65,11 @@
   <!-- download -->
   <div
     style="height: 300px;"
-    class="row  text-light align-items-center-bg-success rounded  ms-md-5"
+    class="row text-light align-items-center-bg-success rounded ms-md-5"
   >
     <div class="col-lg-5">
       <img
-        style="width: 300px; margin-left: 100px ; margin-top: -20px;"
+        style="width: 300px; margin-left: 100px; margin-top: -20px;"
         src="../../assets/Download-Icon.png"
         alt=""
       />
@@ -83,34 +81,42 @@
         <br />
         Google Play fot better experience
       </h5>
-      <div class="d-flex justify-content-center align-items-center ">
-        <img width="200px"
+      <div class="d-flex justify-content-center align-items-center">
+        <img
+          width="200px"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png"
           alt=""
         />
-        <img width="165px"
+        <img
+          width="165px"
           src="https://www.nicepng.com/png/full/25-253876_app-store-and-google-play-with-your-own.png"
           alt=""
         />
-        
       </div>
     </div>
   </div>
 
   <!-- client testimonials -->
-   <div class="text-center ny-5">
+  <div class="text-center ny-5">
     <h1>Client Testimonials</h1>
     <marquee behavior="" direction="'">
-        <div class="row my-5">
-            <div class="col-lg-4">
-                <div class="rounded border bg-light w-100 p-4 shadow">
-                    <h5>Name</h5>
-                    <p style="white-space: normal; width: 100%; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempora exercitationem nobis magnam assumenda possimus officiis saepe. Ut quos nobis cumque voluptate voluptatum, ad, repellendus, impedit molestias possimus laudantium enim.
-                    Rerum optio, ab eaque at assumenda impedit, modi aliquam illum laudantium ullam quam eligendi quas excepturi. Magni officiis dignissimos mollitia, unde harum adipisci labore. Odio praesentium explicabo molestiae modi accusamus?</p>
-                </div>
-            </div>
+      <div class="row my-5">
+        <div class="col-lg-4">
+          <div class="rounded border bg-light w-100 p-4 shadow">
+            <h5>Name</h5>
+            <p style="white-space: normal; width: 100%; text-align: justify;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              tempora exercitationem nobis magnam assumenda possimus officiis
+              saepe. Ut quos nobis cumque voluptate voluptatum, ad, repellendus,
+              impedit molestias possimus laudantium enim. Rerum optio, ab eaque
+              at assumenda impedit, modi aliquam illum laudantium ullam quam
+              eligendi quas excepturi. Magni officiis dignissimos mollitia, unde
+              harum adipisci labore. Odio praesentium explicabo molestiae modi
+              accusamus?
+            </p>
+          </div>
         </div>
+      </div>
     </marquee>
-
-   </div>
+  </div>
 </div>
